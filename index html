@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnis | Attualità & Curiosità</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #e74c3c;
+        }
+        nav {
+            background: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .category {
+            color: #e74c3c;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>OMNIS</h1>
+    <p>Tutto quello che c'è da sapere, e anche di più.</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Scienza</a>
+    <a href="#">Mondo</a>
+    <a href="#">Curiosità</a>
+    <a href="#">Tecnologia</a>
+</nav>
+
+<div class="container">
+    <article class="card">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Spazio">
+        <div class="card-content">
+            <span class="category">Scienza</span>
+            <h2>Nuove scoperte su Marte: c'è traccia di antichi fiumi?</h2>
+            <p>Le ultime immagini inviate dal rover suggeriscono un passato molto più "umido" di quanto immaginassimo...</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Tecnologia">
+        <div class="card-content">
+            <span class="category">Tecnologia</span>
+            <h2>L'AI sta cambiando il modo in cui cuciniamo</h2>
+            <p>Dalle ricette personalizzate ai forni intelligenti, ecco come l'intelligenza artificiale entra nelle nostre cucine.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <img src="https://images.unsplash.com/photo-1516192518150-4d8ef54cdd97?auto=format&fit=crop&w=800&q=80" alt="Curiosità">
+        <div class="card-content">
+            <span class="category">Curiosità</span>
+            <h2>Perché sbadigliare è contagioso?</h2>
+            <p>La scienza prova a spiegare uno dei misteri biologici più comuni e affascinanti del comportamento umano.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80" alt="Mondo">
+        <div class="card-content">
+            <span class="category">Ambiente</span>
+            <h2>La rinascita delle barriere coralline</h2>
+            <p>Un nuovo progetto internazionale sta dando risultati insperati per la protezione degli oceani.</p>
+        </div>
+    </article>
+</div>
+
+<footer>
+    <p>&copy; 2026 Omnis Magazine - Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
